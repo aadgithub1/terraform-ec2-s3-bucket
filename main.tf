@@ -14,3 +14,7 @@ resource "aws_instance" "web-server" {
     Name = var.instance-name
   }
 }
+
+resource "aws_s3_bucket" "my-bucket" {
+  bucket = var.bucket-name
+}
